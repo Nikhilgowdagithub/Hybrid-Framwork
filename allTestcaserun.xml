@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://Testng.org/Testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="Testng.Listnenersexplained" />
+	</listeners>
+
+	<parameter name="url" value="www.google.com" />
+
+	<test  name="Test" thread-count="5" parallel="classes">
+	
+		<parameter name="name" value="nikhil" />
+		<classes>
+			<class name="Testng.day1" />
+			<class name="Testng.day2" />
+			<class name="Testng.day3" />
+			<class name="Testng.day4" />
+		</classes>
+
+
+	</test> <!-- Test -->
+	<test name="persanal loan">
+		<classes>
+			<class name="Testng.day2" />
+		</classes>
+	</test>
+	<test name="car loan">
+		<classes>
+			<class name="Testng.day3">
+				<methods>
+					<exclude name="carLoanAppLogOut" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="mobile module">
+		<classes>
+			<class name="Testng.day1">
+				<methods>
+					<include name="mobileSignin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="only carloan">
+		<classes>
+			<class name="Testng.day3">
+				<methods>
+					<include name="car.*" />
+				</methods>
+
+			</class>
+		</classes>
+	</test>
+
+	<test name="package">
+		<packages>
+			<package name="Testng" />
+		</packages>
+	</test>
+
+
+	<test name="groups">
+		<groups>
+			<run>
+				<include name="Smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Testng.day1" />
+			<class name="Testng.day2" />
+			<class name="Testng.day3" />
+			<class name="Testng.day4" />
+		</classes>
+
+	</test>
+
+
+</suite> <!-- Suite -->

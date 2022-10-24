@@ -1,0 +1,15 @@
+[ {
+  "emailid" : "nikhilgowda11@gmail.com",
+  "password" : "Nikhilgowda11@",
+  "product" : "ZARA COAT 3",
+  "countryName" : "in",
+  "autosuggestCountryselect" : "india",
+  "orderconfirmationmessage" : "THANKYOU FOR THE ORDER."
+}, {
+  "emailid" : "nikhilgowda111@gmail.com",
+  "password" : "Nikhilgowda111@",
+  "product" : "IPHONE 13 PRO",
+  "countryName" : "s",
+  "autosuggestCountryselect" : "South Africa",
+  "orderconfirmationmessage" : "THANKYOU FOR THE ORDER."
+} ]

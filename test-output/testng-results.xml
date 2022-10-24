@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-25T00:51:38 IST" name="Default suite" finished-at="2022-10-25T00:51:40 IST" duration-ms="1497">
+    <groups>
+    </groups>
+    <test started-at="2022-10-25T00:51:38 IST" name="Default test" finished-at="2022-10-25T00:51:40 IST" duration-ms="1497">
+      <class name="seleniumByNikhil.Testcases.TestNgintigratedToExcelThrowDataProvider">
+        <test-method signature="GetExcelDat(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:seleniumByNikhil.Testcases.TestNgintigratedToExcelThrowDataProvider@436813f3]" started-at="2022-10-25T00:51:40 IST" name="GetExcelDat" data-provider="datapass" finished-at="2022-10-25T00:51:40 IST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hellow]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[text]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetExcelDat -->
+        <test-method signature="GetExcelDat(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:seleniumByNikhil.Testcases.TestNgintigratedToExcelThrowDataProvider@436813f3]" started-at="2022-10-25T00:51:40 IST" name="GetExcelDat" data-provider="datapass" finished-at="2022-10-25T00:51:40 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bye]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[message]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[142]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetExcelDat -->
+        <test-method signature="GetExcelDat(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:seleniumByNikhil.Testcases.TestNgintigratedToExcelThrowDataProvider@436813f3]" started-at="2022-10-25T00:51:40 IST" name="GetExcelDat" data-provider="datapass" finished-at="2022-10-25T00:51:40 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[solo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[call]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[6544]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetExcelDat -->
+      </class> <!-- seleniumByNikhil.Testcases.TestNgintigratedToExcelThrowDataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
