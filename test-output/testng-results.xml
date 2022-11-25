@@ -1,76 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-25T00:51:38 IST" name="Default suite" finished-at="2022-10-25T00:51:40 IST" duration-ms="1497">
+  <suite started-at="2022-11-14T23:07:31 IST" name="Suite" finished-at="2022-11-14T23:09:23 IST" duration-ms="111902">
     <groups>
+      <group name="purchase">
+        <method signature="endToEndTestcase.productorder(java.util.HashMap)[pri:0, instance:seleniumByNikhil.Testcases.endToEndTestcase@7e07db1f]" name="productorder" class="seleniumByNikhil.Testcases.endToEndTestcase"/>
+      </group> <!-- purchase -->
     </groups>
-    <test started-at="2022-10-25T00:51:38 IST" name="Default test" finished-at="2022-10-25T00:51:40 IST" duration-ms="1497">
-      <class name="seleniumByNikhil.Testcases.TestNgintigratedToExcelThrowDataProvider">
-        <test-method signature="GetExcelDat(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:seleniumByNikhil.Testcases.TestNgintigratedToExcelThrowDataProvider@436813f3]" started-at="2022-10-25T00:51:40 IST" name="GetExcelDat" data-provider="datapass" finished-at="2022-10-25T00:51:40 IST" duration-ms="10" status="PASS">
+    <test started-at="2022-11-14T23:07:31 IST" name="EndtoEnd testcase" finished-at="2022-11-14T23:09:22 IST" duration-ms="110999">
+      <class name="seleniumByNikhil.Testcases.endToEndTestcase">
+        <test-method is-config="true" signature="lanchingBrowser()[pri:0, instance:seleniumByNikhil.Testcases.endToEndTestcase@7e07db1f]" started-at="2022-11-14T23:07:32 IST" name="lanchingBrowser" finished-at="2022-11-14T23:08:18 IST" duration-ms="45436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanchingBrowser -->
+        <test-method signature="productorder(java.util.HashMap)[pri:0, instance:seleniumByNikhil.Testcases.endToEndTestcase@7e07db1f]" started-at="2022-11-14T23:08:18 IST" name="productorder" data-provider="getData" finished-at="2022-11-14T23:08:38 IST" duration-ms="20191" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[hellow]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[text]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1]]>
+                <![CDATA[{password=Nikhilgowda11@, product=ZARA COAT 3, autosuggestCountryselect=india, emailid=nikhilgowda11@gmail.com, countryName=in, orderconfirmationmessage=THANKYOU FOR THE ORDER.}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetExcelDat -->
-        <test-method signature="GetExcelDat(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:seleniumByNikhil.Testcases.TestNgintigratedToExcelThrowDataProvider@436813f3]" started-at="2022-10-25T00:51:40 IST" name="GetExcelDat" data-provider="datapass" finished-at="2022-10-25T00:51:40 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- productorder -->
+        <test-method is-config="true" signature="closingtheBrowser()[pri:0, instance:seleniumByNikhil.Testcases.endToEndTestcase@7e07db1f]" started-at="2022-11-14T23:08:38 IST" name="closingtheBrowser" finished-at="2022-11-14T23:08:40 IST" duration-ms="2290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingtheBrowser -->
+        <test-method is-config="true" signature="lanchingBrowser()[pri:0, instance:seleniumByNikhil.Testcases.endToEndTestcase@7e07db1f]" started-at="2022-11-14T23:08:40 IST" name="lanchingBrowser" finished-at="2022-11-14T23:08:58 IST" duration-ms="18182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanchingBrowser -->
+        <test-method signature="productorder(java.util.HashMap)[pri:0, instance:seleniumByNikhil.Testcases.endToEndTestcase@7e07db1f]" started-at="2022-11-14T23:08:58 IST" name="productorder" data-provider="getData" finished-at="2022-11-14T23:09:17 IST" duration-ms="18977" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[bye]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[message]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[142]]>
+                <![CDATA[{password=Nikhilgowda111@, product=IPHONE 13 PRO, autosuggestCountryselect=South Africa, emailid=nikhilgowda111@gmail.com, countryName=s, orderconfirmationmessage=THANKYOU FOR THE ORDER.}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetExcelDat -->
-        <test-method signature="GetExcelDat(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:seleniumByNikhil.Testcases.TestNgintigratedToExcelThrowDataProvider@436813f3]" started-at="2022-10-25T00:51:40 IST" name="GetExcelDat" data-provider="datapass" finished-at="2022-10-25T00:51:40 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[solo]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[call]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[6544]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- productorder -->
+        <test-method is-config="true" signature="closingtheBrowser()[pri:0, instance:seleniumByNikhil.Testcases.endToEndTestcase@7e07db1f]" started-at="2022-11-14T23:09:17 IST" name="closingtheBrowser" finished-at="2022-11-14T23:09:22 IST" duration-ms="4376" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetExcelDat -->
-      </class> <!-- seleniumByNikhil.Testcases.TestNgintigratedToExcelThrowDataProvider -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- closingtheBrowser -->
+      </class> <!-- seleniumByNikhil.Testcases.endToEndTestcase -->
+    </test> <!-- EndtoEnd testcase -->
+    <test started-at="2022-11-14T23:09:23 IST" name="Error validation" finished-at="2022-11-14T23:09:23 IST" duration-ms="5">
+    </test> <!-- Error validation -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -36,7 +36,7 @@ public class Baseclass {
 	@BeforeMethod(alwaysRun = true)
 	public Landingpage lanchingBrowser() throws IOException {
 		driver = initilizeDriver();
-		Landingpage landingPage = new Landingpage(driver);
+		 landingPage = new Landingpage(driver);
 		landingPage.url();
 		return landingPage;
 

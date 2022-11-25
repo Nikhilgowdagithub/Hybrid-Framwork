@@ -13,17 +13,19 @@ import generalUtilitys.Abstractrepository;
 
 public class cartPage extends Abstractrepository {
 	
+	public cartPage(WebDriver driver) {
+		super(driver);
+		PageFactory.initElements(driver, this);
+
+	}
+	
 	@FindBy(css = ".cart h3")
 	List<WebElement> productitles;
 	
 	@FindBy(css = "ul button[type='button']")
 	WebElement checkout;
 
-	public cartPage(WebDriver driver) {
-		super(driver);
-		PageFactory.initElements(driver, this);
-
-	}
+	
 	public boolean verifyingproductisDisplayed(String productname) {
 		boolean match = productitles.stream().anyMatch((s -> s.getText().equalsIgnoreCase(productname)));
 		return match;

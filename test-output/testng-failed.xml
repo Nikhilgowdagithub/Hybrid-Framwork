@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumByNikhil.Testcases.TestNgintigratedToExcelThrowDataProvider">
+      <class name="seleniumByNikhil.Testcases.errorValidationTest">
         <methods>
-          <include name="GetExcelDat"/>
+          <include name="closingtheBrowser"/>
+          <include name="addtocarterrorvalidation"/>
+          <include name="loginpageerrorvalidation"/>
+          <include name="lanchingBrowser"/>
         </methods>
-      </class> <!-- seleniumByNikhil.Testcases.TestNgintigratedToExcelThrowDataProvider -->
+      </class> <!-- seleniumByNikhil.Testcases.errorValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
