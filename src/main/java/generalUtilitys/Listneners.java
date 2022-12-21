@@ -11,33 +11,31 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-
-
 public class Listneners extends Baseclass implements ITestListener {
-
+	
 	ExtentTest test;
+	WebDriver driver;
 	ExtentReports extent = extentReporterNG.getReportObject();
-	ThreadLocal<ExtentTest>	extendTest=new ThreadLocal<ExtentTest>();
+
+	ThreadLocal<ExtentTest> extendTest = new ThreadLocal<ExtentTest>();
+	/* thread safe in parallel execution */
 	@Override
 	public void onTestStart(ITestResult result) {
 		test = extent.createTest(result.getMethod().getMethodName());
-
 		extendTest.set(test);
 
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		extendTest.get().log(Status.PASS, "Test is PAssed");
+		extendTest.get().log(Status.PASS, "Test is Passed");
 
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 
-
 		extendTest.get().fail(result.getThrowable());
-
 
 		try {
 
@@ -45,14 +43,12 @@ public class Listneners extends Baseclass implements ITestListener {
 
 		} catch (Exception e)
 
-
 		{
 			e.printStackTrace();
 
 		}
 
 		String filePath = null;
-
 
 		try {
 
@@ -62,7 +58,6 @@ public class Listneners extends Baseclass implements ITestListener {
 
 			e.printStackTrace();
 		}
- 
 
 		extendTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
 
@@ -88,5 +83,6 @@ public class Listneners extends Baseclass implements ITestListener {
 	public void onStart(ITestContext context) {
 
 	}
+
 
 }
