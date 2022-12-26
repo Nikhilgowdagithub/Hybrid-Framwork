@@ -10,7 +10,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import generalUtilitys.Baseclass;
-import generalUtilitys.retryMechnisam;
 import objectRepository.Landingpage;
 import objectRepository.Productcatalog;
 import objectRepository.cartPage;
@@ -19,9 +18,8 @@ import objectRepository.orderPage;
 import objectRepository.paymentsPage;
 
 public class endToEndTestcase extends Baseclass {
-	
 
-	@Test(groups = { "purchase" }, dataProvider = "getData", retryAnalyzer = retryMechnisam.class)
+	@Test(groups = { "purchase" }, dataProvider = "getData", retryAnalyzer = Baseclass.class)
 	public void productorder(HashMap<String, String> input) throws IOException, InterruptedException {
 
 		Landingpage landingPage = new Landingpage(driver);
@@ -61,7 +59,5 @@ public class endToEndTestcase extends Baseclass {
 				System.getProperty("user.dir") + "//src//test//resources//purchaseOrder.json");
 		return new Object[][] { { data.get(0) }, { data.get(1) } };
 	}
-
-
 
 }

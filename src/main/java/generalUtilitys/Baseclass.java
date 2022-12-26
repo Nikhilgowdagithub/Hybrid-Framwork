@@ -20,23 +20,27 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import objectRepository.Landingpage;
 
-public class Baseclass {
+public class Baseclass implements IRetryAnalyzer {
 	public WebDriver driver;
 	public Landingpage landingPage;
-	
+
 	@BeforeMethod(alwaysRun = true)
 	public Landingpage lanchingBrowser() throws IOException {
 		driver = initilizeDriver();
-		 landingPage = new Landingpage(driver);
+		landingPage = new Landingpage(driver);
 		landingPage.url();
 		return landingPage;
 
@@ -44,15 +48,12 @@ public class Baseclass {
 
 	public WebDriver initilizeDriver() throws IOException {
 
-		Properties property = new Properties();
-
-		FileInputStream fis = new FileInputStream(
+		Properties property = propertiesFile(
 				System.getProperty("user.dir") + "//src//test//resources//globaldata.properties");
-		property.load(fis);
-		
+
 		String browser = System.getProperty("browser") != null ? System.getProperty("browser")
 				: property.getProperty("browser");
-		
+
 		if (browser.contains("chrome")) {
 
 			ChromeOptions options = new ChromeOptions();
@@ -101,10 +102,8 @@ public class Baseclass {
 
 	}
 
-	
-
 	public List<HashMap<String, String>> getJsanDataToMap(String filepath) throws IOException {
-		
+
 		ObjectMapper mapper = new ObjectMapper();
 		String jsonContent = FileUtils.readFileToString(new File(filepath), StandardCharsets.UTF_8);
 		List<HashMap<String, String>> data = mapper.readValue(jsonContent,
@@ -121,6 +120,42 @@ public class Baseclass {
 		File destination = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
 		FileUtils.copyFile(source, destination);
 		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
+	}
+
+	public Properties propertiesFile(String location) throws IOException {
+
+		Properties property = new Properties();
+		property.load(new FileInputStream(location));
+		return property;
+
+	}
+
+	public ExtentReports getExtentReport() {
+
+		String path = System.getProperty("user.dir") + "\\reports\\index.html";
+
+		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
+
+		reporter.config().setDocumentTitle("Test Results");
+		reporter.config().setReportName("web Automation results");
+
+		ExtentReports extent = new ExtentReports();
+		extent.attachReporter(reporter);
+		extent.setSystemInfo("Tester", "Nikhil");
+
+		return extent;
+	}
+
+	@Override
+	public boolean retry(ITestResult result) {
+		int count = 0;
+		int maxTry = 1;
+
+		if (count < maxTry) {
+			count++;
+		}
+
+		return false;
 	}
 
 	@AfterMethod(alwaysRun = true)

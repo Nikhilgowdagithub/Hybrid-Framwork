@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class dataDrivenExcelTestcase {
 	@Test
-	public void instaLogin() throws IOException {
+	public void instaLogin() throws IOException, InvalidFormatException {
 		dataDrivenFromExcel data = new dataDrivenFromExcel();
 		ArrayList<String> hh = data.getData("instaLogin");
 		WebDriverManager.chromedriver().setup();

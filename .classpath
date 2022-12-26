@@ -35,5 +35,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/nikhi/.p2/pool/plugins/org.testng_7.4.0.r202105021533.jar" sourcepath="C:/Users/nikhi/.p2/pool/plugins/org.testng.source_7.4.0.r202105021533.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

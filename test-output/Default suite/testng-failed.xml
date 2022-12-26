@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumByNikhil.Testcases.errorValidationTest">
+      <class name="seleniumByNikhil.Testcases.demo2">
         <methods>
-          <include name="closingtheBrowser"/>
-          <include name="addtocarterrorvalidation"/>
-          <include name="loginpageerrorvalidation"/>
-          <include name="lanchingBrowser"/>
+          <include name="main"/>
         </methods>
-      </class> <!-- seleniumByNikhil.Testcases.errorValidationTest -->
+      </class> <!-- seleniumByNikhil.Testcases.demo2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

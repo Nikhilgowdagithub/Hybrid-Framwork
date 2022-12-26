@@ -13,14 +13,12 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariOptions;
 
 public class CloudTesting {
-//if we want to run Tc in diffrent enviromnent like diffrent Window version,os verstion,browser version it can be achived using Cloud
-	// practice:-sauce labs is website which provide free cloud
+
 	public static void main(String[] args) throws MalformedURLException, InterruptedException {
-// config capabality:- https://wiki.saucelabs.com/display/DOCS/Platform+Configurator#/  ****
-//we can genarate all the capabality by using above link
+
 		String username = "oauth-nikhilgowda013-f44d9";
 		String Accesskey = "c305e37b-0bb2-4df6-abbc-7f6a6930b473";
-//login with username :-nikhilgowda013@gmail.com and go to username&accesskey and get it
+
 		SafariOptions browserOptions = new SafariOptions();
 		browserOptions.setPlatformName("macOS 11.00");
 		browserOptions.setBrowserVersion("14");
@@ -31,8 +29,7 @@ public class CloudTesting {
 
 		URL url = new URL("https://" + username + ":" + Accesskey + "@ondemand.eu-central-1.saucelabs.com:443/wd/hub");
 		RemoteWebDriver driver = new RemoteWebDriver(url, browserOptions);
-//all the above code is auto genarated in source lab		
-		
+
 		String name = "rahul";
 		String password = "rahulshettyacademy";
 
@@ -57,7 +54,6 @@ public class CloudTesting {
 
 		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
 		System.out.println(driver.getTitle());
-
 		driver.close();
 	}
 

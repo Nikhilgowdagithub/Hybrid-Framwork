@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-21T14:05:22 IST" name="Default suite" finished-at="2022-12-21T14:05:57 IST" duration-ms="35305">
+  <suite started-at="2022-12-27T01:14:17 IST" name="Default suite" finished-at="2022-12-27T01:15:05 IST" duration-ms="47809">
     <groups>
       <group name="errorhandaling">
-        <method signature="errorValidationTest.addtocarterrorvalidation(java.util.HashMap)[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@4fb0f2b9]" name="addtocarterrorvalidation" class="seleniumByNikhil.Testcases.errorValidationTest"/>
+        <method signature="errorValidationTest.addtocarterrorvalidation(java.util.HashMap)[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@399f45b1]" name="addtocarterrorvalidation" class="seleniumByNikhil.Testcases.errorValidationTest"/>
       </group> <!-- errorhandaling -->
     </groups>
-    <test started-at="2022-12-21T14:05:22 IST" name="Default test" finished-at="2022-12-21T14:05:57 IST" duration-ms="35305">
+    <test started-at="2022-12-27T01:14:17 IST" name="Default test" finished-at="2022-12-27T01:15:05 IST" duration-ms="47809">
       <class name="seleniumByNikhil.Testcases.errorValidationTest">
-        <test-method is-config="true" signature="lanchingBrowser()[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@4fb0f2b9]" started-at="2022-12-21T14:05:22 IST" name="lanchingBrowser" finished-at="2022-12-21T14:05:30 IST" duration-ms="8378" status="PASS">
+        <test-method is-config="true" signature="lanchingBrowser()[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@399f45b1]" started-at="2022-12-27T01:14:17 IST" name="lanchingBrowser" finished-at="2022-12-27T01:14:35 IST" duration-ms="17772" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lanchingBrowser -->
-        <test-method signature="addtocarterrorvalidation(java.util.HashMap)[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@4fb0f2b9]" started-at="2022-12-21T14:05:30 IST" name="addtocarterrorvalidation" data-provider="getData" finished-at="2022-12-21T14:05:37 IST" duration-ms="6529" status="PASS">
+        <test-method signature="addtocarterrorvalidation(java.util.HashMap)[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@399f45b1]" started-at="2022-12-27T01:14:35 IST" name="addtocarterrorvalidation" data-provider="getData" finished-at="2022-12-27T01:14:42 IST" duration-ms="7875" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,15 +25,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addtocarterrorvalidation -->
-        <test-method is-config="true" signature="closingtheBrowser()[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@4fb0f2b9]" started-at="2022-12-21T14:05:37 IST" name="closingtheBrowser" finished-at="2022-12-21T14:05:37 IST" duration-ms="539" status="PASS">
+        <test-method is-config="true" signature="closingtheBrowser()[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@399f45b1]" started-at="2022-12-27T01:14:42 IST" name="closingtheBrowser" finished-at="2022-12-27T01:14:43 IST" duration-ms="399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingtheBrowser -->
-        <test-method is-config="true" signature="lanchingBrowser()[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@4fb0f2b9]" started-at="2022-12-21T14:05:37 IST" name="lanchingBrowser" finished-at="2022-12-21T14:05:43 IST" duration-ms="5738" status="PASS">
+        <test-method is-config="true" signature="lanchingBrowser()[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@399f45b1]" started-at="2022-12-27T01:14:43 IST" name="lanchingBrowser" finished-at="2022-12-27T01:14:50 IST" duration-ms="7127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lanchingBrowser -->
-        <test-method signature="addtocarterrorvalidation(java.util.HashMap)[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@4fb0f2b9]" started-at="2022-12-21T14:05:43 IST" name="addtocarterrorvalidation" data-provider="getData" finished-at="2022-12-21T14:05:49 IST" duration-ms="6128" status="PASS">
+        <test-method signature="addtocarterrorvalidation(java.util.HashMap)[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@399f45b1]" started-at="2022-12-27T01:14:50 IST" name="addtocarterrorvalidation" data-provider="getData" finished-at="2022-12-27T01:14:56 IST" duration-ms="6445" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,19 +44,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addtocarterrorvalidation -->
-        <test-method is-config="true" signature="closingtheBrowser()[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@4fb0f2b9]" started-at="2022-12-21T14:05:49 IST" name="closingtheBrowser" finished-at="2022-12-21T14:05:50 IST" duration-ms="612" status="PASS">
+        <test-method is-config="true" signature="closingtheBrowser()[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@399f45b1]" started-at="2022-12-27T01:14:56 IST" name="closingtheBrowser" finished-at="2022-12-27T01:14:57 IST" duration-ms="276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingtheBrowser -->
-        <test-method is-config="true" signature="lanchingBrowser()[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@4fb0f2b9]" started-at="2022-12-21T14:05:50 IST" name="lanchingBrowser" finished-at="2022-12-21T14:05:56 IST" duration-ms="6077" status="PASS">
+        <test-method is-config="true" signature="lanchingBrowser()[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@399f45b1]" started-at="2022-12-27T01:14:57 IST" name="lanchingBrowser" finished-at="2022-12-27T01:15:03 IST" duration-ms="6514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lanchingBrowser -->
-        <test-method signature="loginpageerrorvalidation()[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@4fb0f2b9]" started-at="2022-12-21T14:05:56 IST" name="loginpageerrorvalidation" finished-at="2022-12-21T14:05:57 IST" duration-ms="733" status="PASS">
+        <test-method signature="loginpageerrorvalidation()[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@399f45b1]" started-at="2022-12-27T01:15:03 IST" name="loginpageerrorvalidation" finished-at="2022-12-27T01:15:04 IST" duration-ms="1026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpageerrorvalidation -->
-        <test-method is-config="true" signature="closingtheBrowser()[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@4fb0f2b9]" started-at="2022-12-21T14:05:57 IST" name="closingtheBrowser" finished-at="2022-12-21T14:05:57 IST" duration-ms="481" status="PASS">
+        <test-method is-config="true" signature="closingtheBrowser()[pri:0, instance:seleniumByNikhil.Testcases.errorValidationTest@399f45b1]" started-at="2022-12-27T01:15:04 IST" name="closingtheBrowser" finished-at="2022-12-27T01:15:05 IST" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingtheBrowser -->

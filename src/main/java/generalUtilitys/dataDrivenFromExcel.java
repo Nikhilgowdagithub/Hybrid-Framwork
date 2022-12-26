@@ -1,10 +1,11 @@
 package generalUtilitys;
 
-import java.io.FileInputStream;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
@@ -14,13 +15,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class dataDrivenFromExcel {
 
-	public ArrayList<String> getData(String testCaseName) throws IOException {
+	public ArrayList<String> getData(String testCaseName) throws IOException, InvalidFormatException {
 
 		ArrayList<String> arraylist = new ArrayList<String>();
-		FileInputStream fis = new FileInputStream(
-				"./src/test/resources/endToEndFrameworkExelData.xlsx");
+//FileInputStream fis = new FileInputStream("./src/test/resources/endToEndFrameworkExelData.xlsx");
 
-		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		XSSFWorkbook workbook = new XSSFWorkbook(new File("./src/test/resources/endToEndFrameworkExelData.xlsx"));
 		int sheets = workbook.getNumberOfSheets();
 		for (int i = 0; i < sheets; i++) {
 			if (workbook.getSheetName(i).equalsIgnoreCase("testdata")) {

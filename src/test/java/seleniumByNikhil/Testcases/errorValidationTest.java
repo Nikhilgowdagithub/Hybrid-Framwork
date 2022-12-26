@@ -40,11 +40,10 @@ public class errorValidationTest extends Baseclass {
 
 		HashMap<String, String> map = new HashMap<String, String>();
 
-
 		map.put("emailid", "nikhilgowda11@gmail.com");
 		map.put("password", "Nikhilgowda11@");
 		map.put(productname, "ZARA COAT 3");
-		
+
 		HashMap<String, String> map1 = new HashMap<String, String>();
 		map1.put("emailid", "nikhilgowda111@gmail.com");
 		map1.put("password", "Nikhilgowda111@");

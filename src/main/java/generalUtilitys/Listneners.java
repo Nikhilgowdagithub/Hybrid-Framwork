@@ -12,15 +12,18 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class Listneners extends Baseclass implements ITestListener {
-	
+
 	ExtentTest test;
 	WebDriver driver;
-	ExtentReports extent = extentReporterNG.getReportObject();
+	ExtentReports extent;
 
 	ThreadLocal<ExtentTest> extendTest = new ThreadLocal<ExtentTest>();
+
 	/* thread safe in parallel execution */
 	@Override
 	public void onTestStart(ITestResult result) {
+		
+		extent = getExtentReport();
 		test = extent.createTest(result.getMethod().getMethodName());
 		extendTest.set(test);
 
@@ -83,6 +86,5 @@ public class Listneners extends Baseclass implements ITestListener {
 	public void onStart(ITestContext context) {
 
 	}
-
 
 }
